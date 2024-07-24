@@ -1,0 +1,319 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap');
+
+/* styles.css */
+
+/* Configuração global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navegação */
+header {
+    background-color: #033418; /* Verde Escuro */
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+}
+
+.navigation {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #FF6113; /* Laranja */
+    transform: scale(1.05);
+}
+
+/* Seção heroica */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #033418; /* Verde Escuro */
+    color: #fff;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-out;
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat para o título */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    animation: zoomIn 1s ease-out;
+}
+
+/* Botão */
+.cta-button {
+    display: inline-block;
+    background-color: #FF6113; /* Laranja */
+    color: #fff;
+    padding: 1rem 2.5rem; /* Aumentado o tamanho do botão */
+    text-decoration: none;
+    border-radius: 6px; /* Menos arredondado */
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #e55c5c;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções principais */
+main {
+    padding: 2rem;
+}
+
+/* Cards Animados */
+.card {
+    background: linear-gradient(135deg, #FF6113, #033418); /* Degradê de Laranja para Verde Escuro */
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat para o título do card */
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Seção principal */
+.section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #033418; /* Verde Escuro */
+    animation: fadeInUp 1s ease-out;
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat para o subtítulo */
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Módulos */
+.modules-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.module {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.module h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #033418; /* Verde Escuro */
+}
+
+.module p {
+    font-size: 0.9rem;
+}
+
+/* Seção de bônus */
+#bonuses ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bonuses li {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Seção de chamada para ação */
+.cta-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in;
+}
+
+.cta-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cta-image {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    animation: zoomIn 1s ease-out;
+}
+
+/* Rodapé */
+footer {
+    background-color: #033418; /* Verde Escuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Design responsivo */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .modules-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .module {
+        min-width: 100%;
+    }
+
+    #bonuses li {
+        max-width: 90%;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
